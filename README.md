@@ -1,5 +1,3 @@
-Template Galeria
-
 Tecnologias:
     - NextJS
     - TypeScript
@@ -7,7 +5,7 @@ Tecnologias:
 
 Passos
 
-[x] - Estrutura inicial;
-[] - Variaveis de cor / tamanho; 
-[] - Estilos globais;
-[] - Tema Dark e Light;
+[x] - Estrutura inicial;  
+[x] - Variaveis de cor / tamanho;   
+[x] - Estilos globais;  
+[x] - Tema Dark e Light;  
