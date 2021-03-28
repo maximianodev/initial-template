@@ -1,3 +1,5 @@
+Template inicial para qualquer projeto Web
+
 Tecnologias:
     - NextJS
     - TypeScript
