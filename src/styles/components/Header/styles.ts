@@ -1,13 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
-    height: 60px;
-    padding: 0 30px;
+const Container = styled.div`
+    ${({ theme }) => css`
+        height: 60px;
+        padding: 0 30px;
 
-    color: #fff;
-    background: ${props => props.theme.colors.primary};
+        color: #fff;
+        background: ${theme.colors.primary};
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    `}
 `
+
+export { Container }

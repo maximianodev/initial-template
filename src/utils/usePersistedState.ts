@@ -8,6 +8,7 @@ type Response<T> = [
 function usePersistedState<T>(key: string, initialState: T): Response<T> {
     const [state, setState] = useState(initialState);
 
+
     useEffect(() => {
         const storageValue = localStorage.getItem(key);
 

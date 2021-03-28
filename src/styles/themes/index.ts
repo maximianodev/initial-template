@@ -1,23 +1,39 @@
-export const light = {
-    title: 'light',
+import { DefaultTheme, CustomTheme } from 'styled-components'
+import { light, dark } from './themes'
 
-    colors: {
-        primary: '#8739f9',
-        primcolorAccentary: '#37b9f1',
+const defaultTheme = {
+  title: 'light',
+  colors: {
+    primary: '#171738',
+    primcolorAccentary: '#8EF9F3',
 
-        background: '#F5F5F5',
-        colorText: '#565360',
-    },
-};
+    background: '#F5F5F5',
+    light: '#fff',
+    dark: '#000',
+    colorGrey: '#F2F5F5',
+    colorText: '#565360',
+    colorLabel: '#908E9B',
+    colorDisabled: '#E1DFE9',
+  },
+  device: {
+    maxMobile: '768px',
+    maxTablet: '1080px'
+  },
+  fontSize: {
+    lengthSm1: '.25rem',
+    lengthSm2: '.5rem',
+    lengthSm3: '.75rem',
+    lengthMd1: '1rem',
+    lengthMd2: '1.25rem',
+    lengthMd3: '1.5rem',
+    lengthLg1: '2rem',
+    lengthLg2: '3rem',
+    lengthLg3: '4rem'
+  }
+}
 
-export const dark = {
-    title: 'dark',
+function combineTheme(theme: DefaultTheme): CustomTheme {
+  return { ...defaultTheme, ...theme }
+}
 
-    colors: {
-        primary: '#8739f9',
-        primcolorAccentary: '#37b9f1',
-
-        background: '#000',
-        colorText: '#fff',
-    },
-};
+export { combineTheme, dark, light }
