@@ -1,6 +1,6 @@
 import { ThemeContext } from 'styled-components'
 import { useContext } from 'react'
-import { Container } from '../../styles/components/Header/styles'
+import * as S from './styles'
 import Switch from 'react-switch'
 import { shade } from 'polished';
 
@@ -12,7 +12,7 @@ function Header(props: Props) {
     const { colors, title } = useContext(ThemeContext)
 
     return (
-        <Container>
+        <S.Container>
             Hello World
             <Switch
                 onChange={props.toggleTheme}
@@ -25,7 +25,7 @@ function Header(props: Props) {
                 offColor={shade(0.1, colors.primary)}
                 onColor={colors.primcolorAccentary}
             />
-        </Container>
+        </S.Container>
     )
 }
 
