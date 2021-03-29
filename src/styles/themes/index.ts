@@ -32,7 +32,8 @@ const defaultTheme = {
   }
 }
 
-function combineTheme(theme: CustomTheme ): any {
+
+function combineTheme(theme: CustomTheme ): DefaultTheme {
   return { ...defaultTheme, ...theme }
 }
 

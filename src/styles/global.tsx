@@ -15,6 +15,13 @@ const GlobalStyle = createGlobalStyle`
       background: ${theme.colors.background};
       font-size: 14px;
     }
+
+    body * {
+      &::selection {
+        background: ${theme.colors.primary};
+        color: ${theme.colors.light};
+      } 
+    }
     
     @media (max-width: 1024px) {
       html {

@@ -36,8 +36,13 @@ declare module 'styled-components' {
         colors: {
             primary: string,
             primcolorAccentary: string,
-            colorText: string,
             background: string,
+            light: string,
+            dark: string,
+            colorGrey: string,
+            colorText: string,
+            colorLabel: string,
+            colorDisabled: string,
         }
     }
 }

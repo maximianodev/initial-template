@@ -5,8 +5,13 @@ export const light = {
         primary: '#171738',
         primcolorAccentary: '#8EF9F3',
 
-        background: '#F5F5F5',
         colorText: '#565360',
+        background: '#F5F5F5',
+        light: '#fff',
+        dark: '#000',
+        colorGrey: '#F2F5F5',
+        colorLabel: '#908E9B',
+        colorDisabled: '#E1DFE9',
     },
 };
 
@@ -17,7 +22,12 @@ export const dark = {
         primary: '#171738',
         primcolorAccentary: '#8EF9F3',
 
-        background: '#000',
         colorText: '#fff',
+        background: '#000',
+        light: '#fff',
+        dark: '#000',
+        colorGrey: '#F2F5F5',
+        colorLabel: '#908E9B',
+        colorDisabled: '#E1DFE9',
     },
 };

@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   const toggleTheme = () => {
       setTheme(theme.title === 'light' ? combineTheme(dark) : combineTheme(light));
   }
+  
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
