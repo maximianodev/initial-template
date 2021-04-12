@@ -1,8 +1,7 @@
 import { ThemeContext } from 'styled-components'
 import { useContext } from 'react'
 import * as S from './styles'
-import Switch from 'react-switch'
-import { shade } from 'polished';
+import Image from 'next/image'
 
 interface Props {
     toggleTheme: () => void;
@@ -14,17 +13,15 @@ function Header(props: Props) {
     return (
         <S.Container>
             Hello World
-            <Switch
-                onChange={props.toggleTheme}
-                checked={title === 'dark'}
-                checkedIcon={false}
-                uncheckedIcon={false}
-                height={10}
-                width={40}
-                handleDiameter={20}
-                offColor={shade(0.1, colors.primary)}
-                onColor={colors.primcolorAccentary}
-            />
+            <S.Button
+                onClick={props.toggleTheme}
+            >
+                {
+                    title === 'dark' ? <Image src="/images/lua.svg" alt="lua" width="40px" height="40px" />
+                        :
+                        <Image src="/images/sol.svg" alt="lua" width="40px" height="40px" />
+                }
+            </S.Button>
         </S.Container>
     )
 }

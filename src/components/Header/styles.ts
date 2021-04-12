@@ -13,5 +13,19 @@ const Container = styled.div`
         justify-content: space-between;
     `}
 `
+const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-export { Container }
+    background: transparent;
+
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        box-shadow: 0 0 0 3px rgb(66 153 225 / 60%);
+    }
+`
+
+export { Container, Button }
